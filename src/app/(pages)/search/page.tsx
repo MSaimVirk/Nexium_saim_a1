@@ -4,8 +4,9 @@ import QuoteCard from "../../../components/QuoteCard";
 import SearchBar from "../../../components/SearchBar";
 
 export default function Home() {
-  const [quotes, setQuotes] = useState([]);
-  const [filtered, setFiltered] = useState([]);
+  type Quote = { text: string; author: string };
+  const [quotes, setQuotes] = useState<Quote[]>([]);
+  const [filtered, setFiltered] = useState<Quote[]>([]);
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(true);
 
@@ -20,7 +21,7 @@ export default function Home() {
     fetchQuotes();
   }, []);
 
-  const handleSearch = (text) => {
+  const handleSearch = (text: string) => {
   setQuery(text);
 
   const lower = text.toLowerCase();

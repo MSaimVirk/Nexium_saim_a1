@@ -14,7 +14,12 @@ import {
 import { Button } from "../../../components/ui/button";
 import React from "react";
 
-const QuoteDisplay = React.memo(function QuoteDisplay({ quote }) {
+type Quote = {
+  text: string;
+  author: string;
+};
+
+const QuoteDisplay = React.memo(function QuoteDisplay({ quote }: { quote: Quote }) {
   return (
     <AlertDialogHeader>
       <AlertDialogTitle>Random Quote</AlertDialogTitle>
