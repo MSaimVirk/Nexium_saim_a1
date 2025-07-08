@@ -23,7 +23,7 @@ export default function Home() {
         <div className="border-t border-gray-300 dark:border-gray-700 pt-8">
           <h2 className="text-2xl font-semibold mb-2">About Me</h2>
           <p className="text-base leading-relaxed">
-            Hi! I'm <strong className="text-black">Saim Virk</strong>, a passionate Computer Science student from FAST-NUCES.
+            Hi! I am <strong className="text-black">Saim Virk</strong>, a passionate Computer Science student from FAST-NUCES.
             This quote generator is a part of my Nexium internship project where I explored React, Next.js, and UI libraries like ShadCN.
           </p>
         </div>
