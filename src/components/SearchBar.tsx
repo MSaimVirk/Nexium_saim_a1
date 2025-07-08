@@ -1,4 +1,9 @@
-export default function SearchBar({ query, onSearch }) {
+type SearchBarProps = {
+  query: string;
+  onSearch: (value: string) => void;
+};
+
+export default function SearchBar({ query, onSearch }: SearchBarProps) {
   return (
     <input
   type="text"
