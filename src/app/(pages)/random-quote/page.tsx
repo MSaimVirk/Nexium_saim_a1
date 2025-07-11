@@ -72,7 +72,7 @@ export default function RandomQuote() {
                 e.preventDefault(); // stops auto-closing the dialog
                 generateRandomQuote(); // your quote generation logic
                 }}
-                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-black dark:text-white dark:hover:bg-gray-700"
             >
                 Next
             </button>
